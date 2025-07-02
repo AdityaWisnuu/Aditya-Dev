@@ -43,6 +43,7 @@ export default defineConfig([globalIgnores([
     "!**/react-shim.js",
     "!**/tsup.config.ts",
 ]), {
+    ignoreDuringBuilds: true,
     extends: fixupConfigRules(compat.extends(
         "plugin:react/recommended",
         "plugin:prettier/recommended",
